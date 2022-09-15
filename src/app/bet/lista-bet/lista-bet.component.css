@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+table {
+  width: 100%;
+}
+
+mat-sidenav-container {
+  width: 100% !important;
+  height: calc(100vh - 150px) !important;
+}
+
+mat-sidenav {
+  background-color: white !important;
+
+}
+
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+.container {
+  padding: 50px 80px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.button {
+  margin: 10px;
+  color:green;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.margin-top {
+  margin-top: 5px;
+}

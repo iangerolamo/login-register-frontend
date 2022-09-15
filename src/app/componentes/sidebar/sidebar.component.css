@@ -1,0 +1,25 @@
+mat-sidenav-container {
+  width: 100% !important;
+  height: calc(100vh - 150px) !important;
+}
+
+mat-sidenav {
+  background-color: white !important;
+
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 209, 209)smoke;
+
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}

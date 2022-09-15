@@ -1,0 +1,26 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    class="mat-elevation-z8"
+    mode="side"
+    opened="true"
+    [fixedInViewport]="true"
+    [fixedTopGap]="64"
+  >
+    <button mat-button class="menu-button" routerLink="home">
+      <mat-icon>home</mat-icon>
+      <span>Página Inicial</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="bet">
+      <mat-icon>attach_money</mat-icon>
+      <span>Apostas</span>
+    </button>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>

@@ -1,0 +1,66 @@
+<h1 mat-dialog-title>Adicionar Aposta</h1>
+<div mat-dialog-content class="box">
+
+  <mat-form-field appearance="fill">
+    <mat-label>Evento</mat-label>
+    <input matInput [(ngModel)]="data.evento">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Data</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="data.data">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Esporte</mat-label>
+    <mat-select [(ngModel)]="data.esporte">
+      <mat-option *ngFor="let esporte of esportes" [value]="esporte.value">
+        {{esporte.value}}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
+
+
+
+  <mat-form-field appearance="fill">
+    <mat-label>Competição</mat-label>
+    <mat-select [(ngModel)]="data.competicao">
+      <mat-option *ngFor="let competicao of competicoes" [value]="competicao.value">
+        {{competicao.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Competição</mat-label>
+    <input matInput [(ngModel)]="data.competicao">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Mercado</mat-label>
+    <mat-select [(ngModel)]="data.mercado">
+      <mat-option *ngFor="let mercado of mercados" [value]="mercado.value">
+        {{mercado.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <mat-label>Aposta</mat-label>
+    <input matInput [(ngModel)]="data.aposta">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Lucro</mat-label>
+    <input matInput [(ngModel)]="data.lucro">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Odd</mat-label>
+    <input matInput [(ngModel)]="data.odd">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Create</button>
+</div>
